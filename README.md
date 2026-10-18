@@ -1,16 +1,52 @@
-# React + Vite
+# Holocron Galáctico
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Site para fãs de Star Wars feito com React, que lista personagens da saga, permite buscar por nome e mostra uma página de detalhes de cada um.
 
-Currently, two official plugins are available:
+![Tela inicial do Holocron Galáctico](prints/home.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Funcionalidades
 
-## React Compiler
+- Lista de personagens com dados da SWAPI (Star Wars API)
+- Busca em tempo real por nome
+- Página de detalhes de cada personagem, com rotas dinâmicas
+- Estados de carregamento e de erro, com botão "Tentar novamente"
+- Mensagem amigável quando nenhum personagem é encontrado
+- Características traduzidas para português, com explicação de BBY/ABY
+- Layout responsivo com CSS Grid
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologias
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- React Router
+- CSS puro
+- ESLint
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Como rodar o projeto
+
+1. Clone o repositório:
+```bash
+   git clone https://github.com/Deidriane-amorim/holocron-galactico.git
+```
+2. Entre na pasta e instale as dependências:
+```bash
+   cd holocron-galactico
+   npm install
+```
+3. Inicie o servidor de desenvolvimento:
+```bash
+   npm run dev
+```
+
+## O que aprendi
+
+- Consumir uma API com `fetch`, `async/await` e tratamento de erros
+- Gerenciar estado com `useState` e efeitos com `useEffect`
+- Criar rotas dinâmicas com React Router (`useParams`)
+- Organizar o código em componentes e funções utilitárias
+
+## Autora
+
+Feito por Deidriane Amorim
+
+Projeto feito por fãs, sem fins lucrativos. Star Wars é marca da Lucasfilm/Disney.
